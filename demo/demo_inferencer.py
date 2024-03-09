@@ -31,7 +31,7 @@ def parse_args():
     parser.add_argument(
         '--device',
         type=str,
-        default=None,
+        default='cuda:0',
         help='Device used for inference. '
         'If not specified, the available device will be automatically used.')
     parser.add_argument(

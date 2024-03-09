@@ -28,8 +28,8 @@ LINETYPE = 1
 
 def parse_args():
     parser = argparse.ArgumentParser(description='MMAction2 demo')
-    parser.add_argument('video', help='video file/url')
-    parser.add_argument('out_filename', help='output filename')
+    parser.add_argument('--video', default="../141/141_output_segment000.mp4", help='video file/url')
+    parser.add_argument('--out_filename', default="demo/141_output_segment000.mp4", help='output filename')
     parser.add_argument(
         '--config',
         default=('configs/skeleton/posec3d/'
@@ -44,6 +44,7 @@ def parse_args():
     parser.add_argument(
         '--det-config',
         default='demo/demo_configs/faster-rcnn_r50_fpn_2x_coco_infer.py',
+
         help='human detection config file path (from mmdet)')
     parser.add_argument(
         '--det-checkpoint',
