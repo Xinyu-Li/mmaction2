@@ -150,4 +150,6 @@ mmaction/tools/*
 !projects/stad_tutorial/*.ipynb
 mmaction/.mim
 *.mp4
+
 demo/demo_spatiotemporal_det.mp4
+
